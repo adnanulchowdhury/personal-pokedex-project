@@ -65,11 +65,19 @@ axios.get("https://pokeapi.co/api/v2/pokemon/2/")
 })
 
 //Charizard
+//https://pokeapi.co/api/v2/pokemon/6/
+
 axios.get("https://pokeapi.co/api/v2/pokemon/6/")
 .then((response) => {
 
-    let li = document.createElement("li")
+    let ul = document.querySelector("#charizard")
+    
     let pokeData = response.data
+    let name = document.createElement("li")
+    let hp = document.createElement("li")
+    let attack = document.createElement("li")
+    let defence = document.createElement("li")
+    let abilities = document.createElement("li")
 
     let charizard = new Pokemon(
         pokeData.name,
@@ -78,22 +86,79 @@ axios.get("https://pokeapi.co/api/v2/pokemon/6/")
         pokeData.stats[3].base_stat,
         pokeData.abilities[0].ability.name + ", " + pokeData.abilities[1].ability.name
     )
-    console.log(charizard) 
+    console.log(charizard)
+
+    professor.add(charizard)
+
+    pokeData.innerHTML = charizard.data
+
+    name.innerHTML = "Name: " + charizard.name
+    hp.innerHTML = "Hp: " + charizard.hp
+    attack.innerHTML = "Attack: " + charizard.attack
+    defence.innerHTML = "Defence: " + charizard.defence
+    abilities.innerHTML = "Abilities: " + charizard.abilities
+
+    ul.appendChild(name)
+    ul.appendChild(hp)
+    ul.appendChild(attack)
+    ul.appendChild(defence)
+    ul.appendChild(abilities)
+
+}).catch((error) => {
+    console.log(error)
 })
 
 //blastoise
-axios.get("https://pokeapi.co/api/v2/pokemon/6/")
+//https://pokeapi.co/api/v2/pokemon/9/
+
+axios.get("https://pokeapi.co/api/v2/pokemon/9/")
 .then((response) => {
 
-    let li = document.createElement("li")
+    let ul = document.querySelector("#blastoise")
+    
     let pokeData = response.data
+    let name = document.createElement("li")
+    let hp = document.createElement("li")
+    let attack = document.createElement("li")
+    let defence = document.createElement("li")
+    let abilities = document.createElement("li")
 
-    let charizard = new Pokemon(
+    let blastoise = new Pokemon(
         pokeData.name,
         pokeData.stats[5].base_stat,
         pokeData.stats[4].base_stat,
         pokeData.stats[3].base_stat,
         pokeData.abilities[0].ability.name + ", " + pokeData.abilities[1].ability.name
     )
-    console.log(charizard) 
+    console.log(blastoise)
+
+    professor.add(blastoise)
+
+    pokeData.innerHTML = blastoise.data
+
+    name.innerHTML = "Name: " + blastoise.name
+    hp.innerHTML = "Hp: " + blastoise.hp
+    attack.innerHTML = "Attack: " + blastoise.attack
+    defence.innerHTML = "Defence: " + blastoise.defence
+    abilities.innerHTML = "Abilities: " + blastoise.abilities
+
+    ul.appendChild(name)
+    ul.appendChild(hp)
+    ul.appendChild(attack)
+    ul.appendChild(defence)
+    ul.appendChild(abilities)
+
+}).catch((error) => {
+    console.log(error)
+    // let li = document.createElement("li")
+    // let pokeData = response.data
+
+    // let blastoise = new Pokemon(
+    //     pokeData.name,
+    //     pokeData.stats[5].base_stat,
+    //     pokeData.stats[4].base_stat,
+    //     pokeData.stats[3].base_stat,
+    //     pokeData.abilities[0].ability.name + ", " + pokeData.abilities[1].ability.name
+    // )
+    // console.log(blastoise) 
 })
