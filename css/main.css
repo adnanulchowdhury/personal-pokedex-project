@@ -1,12 +1,25 @@
+.main-section{
+    background-image: url("../image/pallet_town2.jpg");
+    -webkit-backdrop-filter: grayscale(100%)
+    
+    /* background-size: cover; */
+}
 header{
     display: flex;
     flex-direction: row;
+    justify-content:center;
+    background-color:rgb(255, 50, 54);
+    padding: 10px;
+    border: solid black 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .logo{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-content: center;
 }
 
 .title{
@@ -18,7 +31,7 @@ header{
 }
 
 /*  */
-.section-1{
+/* .section-1{
     display: flex;
     flex-direction: row;
 }
@@ -35,9 +48,6 @@ header{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-/* targeting the class of pokemon cards */
-/* .card{
-    height: 700px;
 } */
+
+/* footer */

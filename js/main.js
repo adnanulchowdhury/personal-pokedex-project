@@ -1,3 +1,4 @@
+//The JS code is based on what was done in class and class workshops. All credits goes to Orlando Caraballo from NYCDA.
 class professorCoke {
     constructor(){
         this.all = []
