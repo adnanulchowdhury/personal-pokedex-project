@@ -1,5 +1,5 @@
 .main-section{
-    background-image: url("../image/pallet_town2.jpg");
+    background-image: url("../image/pallet_town2_blur.png");
     -webkit-backdrop-filter: grayscale(100%)
     
     /* background-size: cover; */
@@ -30,6 +30,13 @@ header{
     text-align: center;
 }
 
+.card{
+    border-radius: 25px;
+}
+
+.row{
+    margin-bottom: 0;
+}
 /*  */
 /* .section-1{
     display: flex;
@@ -51,3 +58,21 @@ header{
 } */
 
 /* footer */
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:rgb(160, 157, 159);
+    padding: 30px;
+    border: solid black 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.copyright-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    font-size: 20px; 
+}
