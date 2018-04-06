@@ -28,14 +28,26 @@ header{
     justify-content: center;
     text-align: center;
 }
-/* added curves to pokemon cards */
+/* added curves to pokemon cards  || card manipulations*/
 .card{
     border-radius: 25px;
+    background-color: rgb(89, 88, 91);
+    
+}
+
+/* .card-image{
+    background-color: rgb(89, 88, 91);
+} */
+.card-title{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
 }
 /* Changing the font inside the card */
 .card-reveal{
     font-family: 'Press Start 2P', cursive;
 }
+/* card manipulations end here */
+
 /* fixed the bottom margin problem at second section */
 .row{
     margin-bottom: 0;
