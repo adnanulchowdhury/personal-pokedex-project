@@ -1,57 +1,51 @@
-.main-section{
-    background-image: url("../image/pallet_town2_blur.png");
-    
-    /* background-size: cover; */
-}
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    background-color:rgb(255, 50, 54);
-    padding: 10px;
-    border: solid black 10px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
+.main-section {
+  background-image: url("../image/pallet_town2_blur.png");
+  /* background-size: cover; */ }
 
-.logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ff3236;
+  padding: 10px;
+  border: solid black 10px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px; }
 
-.title{
-    display: flex;
-    flex-grow: 5;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center; }
+
+.title {
+  display: flex;
+  flex-grow: 5;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
 /* added curves to pokemon cards  || card manipulations*/
-.card{
-    border-radius: 25px;
-    background-color: rgb(89, 88, 91);
-    
-}
+.card {
+  border-radius: 25px;
+  background-color: #59585b; }
 
 /* .card-image{
     background-color: rgb(89, 88, 91);
 } */
-.card-title{
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-}
-/* Changing the font inside the card */
-.card-reveal{
-    font-family: 'Press Start 2P', cursive;
-}
-/* card manipulations end here */
+.card-title {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center; }
 
+/* Changing the font inside the card */
+.card-reveal {
+  font-family: 'Press Start 2P', cursive; }
+
+/* card manipulations end here */
 /* fixed the bottom margin problem at second section */
-.row{
-    margin-bottom: 0;
-}
+.row {
+  margin-bottom: 0; }
+
 /*  */
 /* .section-1{
     display: flex;
@@ -71,65 +65,59 @@ header{
     justify-content: center;
     text-align: center;
 } */
-
 /* footer */
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color:rgb(160, 157, 159);
-    padding: 30px;
-    border: solid black 10px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #a09d9f;
+  padding: 30px;
+  border: solid black 10px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px; }
 
-.copyright-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 15px; 
-}
+.copyright-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px; }
+
 /*  */
+.coke_title {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  text-shadow: 3px 3px black; }
 
-.coke_title{
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 25px;
-    text-shadow: 3px 3px black;
-}
-.coke_description{
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 15px;
-    text-shadow: 3px 3px black;
-    /* border: solid black 10px; */
-}
+.coke_description {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+  text-shadow: 3px 3px black;
+  /* border: solid black 10px; */ }
 
-.trainer_coak{
-    margin-top: 200px;
-}
+.trainer_coak {
+  margin-top: 200px; }
 
 /* gif manipulation */
-.ivysaur_gif{
-    width: 320px;
-    height:320px;
-    margin-left: 110px;
-    margin-bottom: 130px;
-}
+.ivysaur_gif {
+  width: 320px;
+  height: 320px;
+  margin-left: 110px;
+  margin-bottom: 130px; }
 
-.charizard_gif{
-    width: 320px;
-    height:320px;
-    margin-left: 110px;
-    margin-bottom: 130px;
-}
+.charizard_gif {
+  width: 320px;
+  height: 320px;
+  margin-left: 110px;
+  margin-bottom: 130px; }
 
-.blastoise_gif{
-    width: 320px;
-    height:320px;
-    margin-left: 110px;
-    margin-bottom: 130px;
-}
+.blastoise_gif {
+  width: 320px;
+  height: 320px;
+  margin-left: 110px;
+  margin-bottom: 130px; }
+
+/*# sourceMappingURL=main.css.map */
