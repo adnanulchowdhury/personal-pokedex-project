@@ -7,6 +7,13 @@ class professorCoke {
     add(pokemon) {
         this.all.push(pokemon)
     }
+    get(pokemon){
+        for (let i = 0; i < this.all.length; i++){
+            if (name === this.all[i].name) {
+                return this.all[i]
+            }
+        }
+    }
 }
 
 class Pokemon {
@@ -163,3 +170,5 @@ axios.get("https://pokeapi.co/api/v2/pokemon/9/")
     // )
     // console.log(blastoise) 
 })
+
+console.log(professor.all)
