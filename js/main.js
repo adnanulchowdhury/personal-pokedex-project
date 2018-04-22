@@ -1,5 +1,5 @@
 //The JS code is based on what was done in class and class workshops. All credits goes to Orlando Caraballo from NYCDA.
-class professorCoke {
+class professorCoak {
     constructor(){
         this.all = []
     }
@@ -28,9 +28,33 @@ class Pokemon {
 }
 
 // let ul = document.querySelector("#ivysaur")
-let professor = new professorCoke()
+let professor = new professorCoak()
 // let pokemon = new Pokemon()
 
+function coakPokemons(callback) {
+
+    let ivysaur = "https://pokeapi.co/api/v2/pokemon/2/"
+    let charizard = "https://pokeapi.co/api/v2/pokemon/6/"
+    let blastoise = "https://pokeapi.co/api/v2/pokemon/9/"
+
+    axios.all([
+        axios.get(ivysaur),
+        axios.get(charizard),
+        axios.get(blastoise),
+    ]).then((response) => {
+            response.forEach(response => {
+                let pokeData = response.data
+
+                let pokemon = new Pokemon (
+                    pokeData.name,
+                    pokeData.stats[5].base_stat,
+                    pokeData.stats[4].base_stat,
+                    pokeData.stats[3].base_stat,
+                    pokeData.abilities[0].ability.name + ", " + pokeData.abilities[1].ability.name
+                )
+            })
+    })
+}
 //Ivysaur
 axios.get("https://pokeapi.co/api/v2/pokemon/2/")
 .then((response) => {
