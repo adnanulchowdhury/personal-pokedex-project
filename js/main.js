@@ -7,7 +7,8 @@ class professorCoke {
     add(pokemon) {
         this.all.push(pokemon)
     }
-    get(pokemon){
+    
+    get(name){
         for (let i = 0; i < this.all.length; i++){
             if (name === this.all[i].name) {
                 return this.all[i]
@@ -35,7 +36,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/2/")
 .then((response) => {
 
     let ul = document.querySelector("#ivysaur")
-    
+
     let pokeData = response.data
     let name = document.createElement("li")
     let hp = document.createElement("li")
@@ -79,7 +80,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/6/")
 .then((response) => {
 
     let ul = document.querySelector("#charizard")
-    
+
     let pokeData = response.data
     let name = document.createElement("li")
     let hp = document.createElement("li")
@@ -123,7 +124,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/9/")
 .then((response) => {
 
     let ul = document.querySelector("#blastoise")
-    
+
     let pokeData = response.data
     let name = document.createElement("li")
     let hp = document.createElement("li")
@@ -168,7 +169,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/9/")
     //     pokeData.stats[3].base_stat,
     //     pokeData.abilities[0].ability.name + ", " + pokeData.abilities[1].ability.name
     // )
-    // console.log(blastoise) 
+    // console.log(blastoise)
 })
 
 console.log(professor.all)
+console.log(professor.get("blastoise"))
