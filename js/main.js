@@ -1,5 +1,5 @@
 //The JS code is based on what was done in class and class workshops. All credits goes to Orlando Caraballo from NYCDA.
-class professorCoke {
+class professorCoak {
     constructor(){
         this.all = []
     }
@@ -27,7 +27,7 @@ class Pokemon {
 }
 
 // let ul = document.querySelector("#ivysaur")
-let professor = new professorCoke()
+let professor = new professorCoak()
 // let pokemon = new Pokemon()
 
 //Ivysaur
