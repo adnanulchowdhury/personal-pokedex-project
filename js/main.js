@@ -7,7 +7,7 @@ class professorCoke {
     add(pokemon) {
         this.all.push(pokemon)
     }
-    get(pokemon){
+    get(name){
         for (let i = 0; i < this.all.length; i++){
             if (name === this.all[i].name) {
                 return this.all[i]
@@ -172,3 +172,4 @@ axios.get("https://pokeapi.co/api/v2/pokemon/9/")
 })
 
 console.log(professor.all)
+console.log(professor.get("ivysaur"))
