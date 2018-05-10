@@ -1,0 +1,1 @@
+A personal pokedex built with Html, Css, JavaScript, and front-end framework named "materialize". Ajax call was implemented to gather information about three pokemons.
