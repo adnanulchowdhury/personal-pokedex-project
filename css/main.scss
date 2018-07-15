@@ -1,5 +1,9 @@
+body{
+    background-color: black;
+}
 .main-section{
     background-image: url("../image/pallet_town2_blur.png");
+    background-attachment: fixed;
     
     /* background-size: cover; */
 }
@@ -83,6 +87,7 @@ header{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
+// 
 
 .copyright-text{
     display: flex;
@@ -103,7 +108,7 @@ header{
 .coke_description{
     color: white;
     font-family: 'Press Start 2P', cursive;
-    font-size: 15px;
+    font-size: 20px;
     text-shadow: 3px 3px black;
     /* border: solid black 10px; */
 }
