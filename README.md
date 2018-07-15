@@ -10,4 +10,4 @@ A personal pokedex built with Html, Css, JavaScript, and front-end framework nam
 https://adnanulchowdhury.github.io/personal-pokedex-project/
 
 ## Screenshot
-![coak's pokedex](https://imgur.com/kGXznVy.gif)
+![coaks-pokedex](image/coaks-pokedex.gif)
